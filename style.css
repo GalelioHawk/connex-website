@@ -790,6 +790,67 @@ em.hl { font-style: normal; color: var(--green-hi); }
 .form-note { font-size: 13px; color: var(--ink-3); margin-top: 14px; }
 .form-panel .btn { margin-top: 22px; width: 100%; }
 
+/* ── Investor page ─────────────────────────────────────────────────────── */
+.investor-hero {
+  padding-bottom: 44px;
+}
+.investor-section {
+  padding-bottom: 120px;
+}
+.investor-card {
+  max-width: 860px;
+  margin: 0 auto;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--r-xl);
+  padding: 34px;
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  gap: 26px;
+  align-items: start;
+}
+.investor-card__icon {
+  width: 82px;
+  height: 82px;
+  border-radius: 22px;
+  background: var(--green-ghost);
+  color: var(--green-hi);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.investor-card__icon svg {
+  width: 34px;
+  height: 34px;
+}
+.investor-card__label {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green-hi);
+}
+.investor-card h2 {
+  font-size: clamp(26px, 3.4vw, 38px);
+  margin-top: 8px;
+}
+.investor-card__body > p:not(.investor-card__label):not(.investor-card__note) {
+  color: var(--ink-2);
+  margin-top: 10px;
+  max-width: 560px;
+}
+.investor-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.investor-card__note {
+  color: var(--ink-3);
+  font-size: 13px;
+  margin-top: 16px;
+}
+
 /* ── Legal pages ────────────────────────────────────────────────────────── */
 .legal-meta {
   font-family: var(--f-mono); font-size: 13px; color: var(--ink-3);
@@ -878,6 +939,7 @@ em.hl { font-style: normal; color: var(--green-hi); }
   .roadmap__grid { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .investor-card { grid-template-columns: 1fr; padding: 28px; }
   .ticker span { font-size: 22px; }
   .float-card { display: none; }
   .hero__visual { padding: 0; }
