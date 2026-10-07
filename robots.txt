@@ -1,4 +1,27 @@
 User-agent: *
 Allow: /
 
+# Public documents and their CSS/JavaScript remain accessible.
+# Hash-based application routes are not sent to the server. Their rendered
+# screens use noindex; these rules also cover any direct-path equivalents.
+Disallow: /edu
+Disallow: /tutoring
+Disallow: /dashboard
+Disallow: /account
+Disallow: /login
+Disallow: /register
+Disallow: /auth
+Disallow: /api/
+Disallow: /homework
+Disallow: /payments
+Disallow: /students
+Disallow: /learner
+Disallow: /tutor/
+
+# Internal working documents are not public marketing content.
+Disallow: /business/
+Disallow: /technical/
+Disallow: /archive/
+Disallow: /.vite/
+
 Sitemap: https://connexsa.co.za/sitemap.xml
